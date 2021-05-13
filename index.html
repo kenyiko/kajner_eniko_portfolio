@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&family=Pangolin&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-image: url(css/kepek/kep1.jpg);
+			background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-size: cover;">
+	
+	<script type="text/javascript">
+		function menu_lenyit() {
+			var element = document.getElementById("menu");
+			element.classList.toggle("latszik");
+		}
+	</script>
+	<script type="text/javascript">
+		function varazslat() {
+			var element = document.getElementById("tundi_varazsol");
+			element.classList.toggle("puff");
+		}
+	</script>
+	<header>
+		<img onclick="menu_lenyit()" id="menu_kep" src="css/ikonok/menu.png">
+		<img onclick="varazslat()" id="tunderke" src="css/kepek/tunder2.png">		
+		<div id="tundi_varazsol" class="puff">
+			<div class="csiribi">
+				<div>csiribí, csiribá</div>
+				<div>hogy vagy?</div>
+			</div>
+		</div>
+		<div id="menu" class="latszik">
+			<a href="rolam.html"><div class="almenu">Rólam</div></a>
+			<a href="kepek.html"><div class="almenu">Képek</div></a>
+			<a href="tervezes.html"><div class="almenu">Tervezés</div></a>
+		</div>
+	</header>
+
+	<main class="kozepre">
+		<div class="doboz">
+			<div class="foszoveg">
+				<div class="nev">Kajner Enikő</div>
+				<div class="cim">Portfólió</div>
+			</div>
+			
+		</div>
+		
+	</main>
+
+</body>
+</html>

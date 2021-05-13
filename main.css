@@ -1,0 +1,200 @@
+body{
+	display: grid;
+	grid-template-areas: 
+		"fejlec"
+		"kontent"
+		"lablec"
+	;
+	grid-template-rows: max-content 1fr max-content;
+	min-height: 100vh;
+	font-size: 16 px;
+	margin: 0;
+}
+/*elhelyezés*/
+	header{
+		grid-area: fejlec;
+		position: relative;
+	}
+	main{
+		grid-area: kontent;
+	}
+	footer{
+		grid-area: lablec;
+	}
+
+/*fejlécecske*/
+	#menu_kep{
+		width: 78px;
+		border-radius: 40px;
+		margin: 8px 0 0 8px;
+	}
+	#menu_kep:hover{
+		-webkit-box-shadow: 0px 0px 13px -1px #FFFFFF;
+		-moz-box-shadow: 0px 0px 13px -1px #FFFFFF; 
+		box-shadow: 0px 0px 13px -1px #FFFFFF;
+		cursor: pointer;
+	}
+	#menu{
+		position: absolute;
+		margin-left: 95px;
+		margin-top: -80px;
+		display: block;
+		background-color: lavender;
+		border: 1px solid #E6E6FA;
+		border-radius: 10px;
+		text-align: left;
+		-webkit-box-shadow: 0px 0px 13px -1px #E6E6FA; 
+		-moz-box-shadow: 0px 0px 13px -1px #E6E6FA;
+		box-shadow: 0px 0px 13px -1px #E6E6FA;
+		max-height: max-content;
+	
+	}
+	#menu.latszik{
+		display: none;
+	}
+	.almenu{
+		font-family: 'Pangolin';
+		font-size: 28px;
+		padding: 5px 20px;
+		
+	}
+	a:hover{
+		color: #ffc61a;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	#tunderke{
+		height: 78px;
+		float: right;
+		border-radius: 40px;
+		margin: 8px;
+	}
+	#tunderke:hover{
+		cursor: pointer;
+		-webkit-box-shadow: 0px 0px 13px -1px #FFFFFF;
+		-moz-box-shadow: 0px 0px 13px -1px #FFFFFF; 
+		box-shadow: 0px 0px 13px -1px #FFFFFF;
+	}
+	#tundi_varazsol{
+		position: absolute;
+		margin-left: 88%;
+		display: block;		
+		text-align: center;		
+		max-height: max-content;
+		padding: .4rem;
+	}
+	#tundi_varazsol.puff{
+		display: none;
+	}
+	.csiribi{
+		font-family: 'Lemonada';
+		background-color: rgba(255, 255, 255, .9);
+		border-radius: 7px;
+		padding: 0 5px;
+	}
+
+/*Kezdőoldal*/
+	main.kozepre{
+		display: grid;
+		grid-template-rows: minmax(1rem, 1fr) max-content minmax(1rem, 1fr);
+		grid-template-columns: minmax(1rem, 1fr) max-content minmax(1rem, 1fr);
+	}
+	.doboz{
+		grid-row: 2/3;
+		grid-column: 2/3;
+		
+	}
+	.foszoveg{
+		display: block;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		-webkit-box-shadow: 0px 0px 13px -1px #FFF5EE;
+		-moz-box-shadow: 0px 0px 13px -1px #FFF5EE; 
+		box-shadow: 0px 0px 13px -1px #FFF5EE;
+		padding: 2rem;
+		border-radius: 5rem;
+		background-color: rgba(255, 245, 238, .6);
+	}
+	.nev{
+		font-size: 7rem;
+		font-family: 'Lemonada';
+		
+	}
+	.cim{
+		font-family: 'Quicksand';
+		font-size: 4rem;
+	}
+
+/*címek*/
+	.cimek{
+		font-family: 'Quicksand';
+		text-align: center;
+		font-size: 3rem;
+		
+	}
+	#alcim{
+		font-family: 'Quicksand';
+		text-align: center;
+		
+	}
+	
+/*rólam*/
+	.szoveg{
+		font-family: 'Quicksand';
+		margin: .5rem 5rem;
+		font-size: 1.2rem;
+		background-color: rgba(255, 255, 255, .85);
+		padding: .9rem 3rem 2rem 3rem;
+		text-align: justify;
+		border-radius: 5rem;
+	}
+	.balfloat{
+		float: left;
+		height: 12rem;
+		margin: 0 1rem 0.5rem 0;
+		border-radius: .2rem;
+	}
+	.jobbfloat{
+		float: right;
+		height: 18rem;
+		border-radius: .2rem;
+		margin: 0 0 .5rem 1rem;
+	}
+
+/*láblécecske*/
+	footer{
+		background-color: rgb(0, 0, 0, .6);
+		font-family: "Quicksand";
+		font-size: .9rem;
+		color: #FFFFFF;
+		margin: 0;
+		text-align: center;
+		padding: 1rem 0;
+	}
+
+/*Képek*/
+	hr{
+		margin: 1.5rem 3rem;
+	}
+	.kepek_ossz{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 2rem 5rem;
+		background-color: rgba(255, 255, 255, .85);
+		padding: 2rem;
+		border-radius: 5rem;
+	}
+	.kep img{
+		height: 50vh;
+		border-radius: 1rem;
+		margin: .5rem 1rem;
+	}
+	.kep img:hover{
+		-webkit-box-shadow: 0px 0px 13px -1px #000000;
+		-moz-box-shadow: 0px 0px 13px -1px #000000; 
+		box-shadow: 0px 0px 13px -1px #000000;
+		cursor: pointer;
+	}	
